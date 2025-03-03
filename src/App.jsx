@@ -9,6 +9,7 @@ import About from "./components/About";
 import Promocards from "./components/Promocards";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ShopByCategory from "./components/Shopbycateg";
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +22,7 @@ function App() {
               <Hero />
               <Promocards />
               <About />
+              <ShopByCategory/>
               <Contact />
               <Footer/>
             </>

@@ -5,14 +5,14 @@ const Contact = () => {
   return (
     <div id='contact' className="min-h-lvh flex flex-col items-center justify-center bg-gray-100 p-6">
       {/* Page Title */}
-      <h1 className="text-5xl font-bold text-gray-900 mb-8">Contact Us</h1>
+      <h1 className="text-4xl font-bold text-gray-900 mb-8">Contact Us</h1>
 
       {/* Contact Content */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 max-w-8xl w-full">
         {/* Contact Form */}
-        <div className="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-2xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
-          <form className="space-y-6">
+        <div className="w-full md:w-1/2 bg-white p-7 rounded-lg shadow-2xl">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+          <form className="space-y-1">
             <div>
               <label className="block text-lg font-medium text-gray-700 mb-2">
                 Name
@@ -51,27 +51,6 @@ const Contact = () => {
             </button>
           </form>
         </div>
-
-        {/* Contact Information
-        <div className="w-full md:w-1/2 space-y-8">
-          <h2 className="text-3xl font-bold text-gray-900">Contact Info</h2>
-          <div className="space-y-6">
-            <div className="flex items-center space-x-4">
-              <FaMapMarkerAlt className="text-2xl text-blue-600" />
-              <p className="text-lg text-gray-700">
-                123 Cartella Street, Tech City, TC 12345
-              </p>
-            </div>
-            <div className="flex items-center space-x-4">
-              <FaPhone className="text-2xl text-blue-600" />
-              <p className="text-lg text-gray-700">+1 (123) 456-7890</p>
-            </div>
-            <div className="flex items-center space-x-4">
-              <FaEnvelope className="text-2xl text-blue-600" />
-              <p className="text-lg text-gray-700">info@cartella.com</p>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

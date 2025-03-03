@@ -42,7 +42,7 @@ const About = () => {
             onClick={handleShopClick}
             className="px-8 py-3 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg"
           >
-            Explore Our Shop
+            Learn more
           </button>
         </div>
       </div>
