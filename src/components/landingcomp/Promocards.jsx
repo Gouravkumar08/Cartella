@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import headphoneImage from "../assets/headphones.jpg";
-import phoneImage from "../assets/elegant-smartphone.jpg";
+import headphoneImage from "../../assets/headphones.jpg";
+import phoneImage from "../../assets/elegant-smartphone.jpg";
 
 const PromoCards = () => {
   const navigate = useNavigate();

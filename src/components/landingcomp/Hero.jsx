@@ -1,5 +1,5 @@
 import React from "react";
-import Signup from "./Signup";
+import Signup from "../auth/Signup";
 import { useNavigate } from "react-router-dom";
 
 

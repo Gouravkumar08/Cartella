@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { FaUser, FaLock } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import loginImage from "../assets/login-banner.jpg";
-import logo from "../assets/Cartella_logo.png";
+import signupImage from "../../assets/signup-banner.jpg";
+import logo from "../../assets/Cartella_logo.png";
 
-export default function Login() {
+export default function Signup() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
+    username: "",
     email: "",
     password: "",
   });
@@ -17,14 +18,14 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Login Data:", formData);
+    console.log("Signup Data:", formData);
     navigate("/");
   };
 
   return (
     <div className="h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900 text-white">
-      <div className="flex h-[500px] w-[900px] bg-gradient-to-br from-slate-50 to-white rounded-lg shadow-lg overflow-hidden">
-        {/* Left Side - Login Form */}
+      <div className="flex h-[550px] w-[800px] bg-gradient-to-br from-slate-50 to-white rounded-lg shadow-lg overflow-hidden">
+        {/* Left Side - Signup Form */}
         <div className="w-1/2 p-8 flex flex-col justify-center">
           {/* Logo and Cartella Name */}
           <div className="flex items-center space-x-2">
@@ -36,19 +37,28 @@ export default function Login() {
             <h2 className="text-black text-3xl font-bold">Cartella</h2>
           </div>
 
-          {/* Login Heading */}
-          <h2 className="text-3xl font-bold text-blue-500 mt-6 mb-2">Login</h2>
-          <p className="text-gray-900 mb-6">Welcome back to Cartella!</p>
+          <h2 className="text-3xl font-bold text-blue-500 mt-6 mb-2">Sign Up</h2>
+          <p className="text-gray-900 mb-6">Join Cartella & start shopping!</p>
 
-          {/* Login Form */}
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="relative">
               <FaUser className="absolute left-3 top-3 text-gray-600" />
               <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                className="w-full bg-white text-gray-800 px-10 py-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-blue-500"
+                value={formData.username}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="relative">
+              <FaEnvelope className="absolute left-3 top-3 text-gray-600" />
+              <input
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="w-full bg-white text-gray-800 px-10 py-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-white text-gray-800 px-10 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -68,18 +78,17 @@ export default function Login() {
               type="submit"
               className="w-full bg-blue-500 hover:bg-blue-600 transition duration-300 py-2 rounded-md font-semibold"
             >
-              Login
+              Sign Up
             </button>
           </form>
 
-          {/* Sign Up Link */}
           <p className="mt-4 text-black text-center">
-            Don't have an account?{" "}
+            Already have an account?{" "}
             <span
               className="text-blue-500 cursor-pointer hover:underline"
-              onClick={() => navigate("/signup")}
+              onClick={() => navigate("/login")}
             >
-              Sign up
+              Log in
             </span>
           </p>
         </div>
@@ -87,11 +96,11 @@ export default function Login() {
         {/* Right Side - Image */}
         <div
           className="w-1/2 bg-cover bg-center"
-          style={{ backgroundImage: `url(${loginImage})` }}
+          style={{ backgroundImage: `url(${signupImage})` }}
         >
           <div className="w-full h-full bg-black bg-opacity-45 flex items-center justify-center">
-            <h3 className="text-4xl font-bold text-white ">
-              Welcome Back to Cartella
+            <h3 className="text-4xl font-bold text-white">
+              Join the Cartella Community
             </h3>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { FaUser, FaShoppingCart } from "react-icons/fa"; // Importing icons
-import logo from "../assets/Cartella_logo.png";
+import logo from "../../assets/Cartella_logo.png";
 import { useNavigate } from "react-router-dom";
 
 export default function Header() {

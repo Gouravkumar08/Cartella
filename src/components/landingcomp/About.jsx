@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import aboutImage from "../assets/about-banner.jpg"; // Adjust the path based on your project structure
+import aboutImage from "../../assets/about-banner.jpg"; // Adjust the path based on your project structure
 
 const About = () => {
   const navigate = useNavigate();
