@@ -7,7 +7,7 @@ import Shopbycateg from "./landingcomp/Shopbycateg";
 import Contact from "./landingcomp/Contact";
 import Footer from "./landingcomp/Footer";
 
-export function landing() {
+export function Landing() {
   return (
     <>
       <Header />
