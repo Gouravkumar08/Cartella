@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Landing } from "./components/landing";
+import { Landing } from "./components/Landing";
 import Signup from "./components/auth/Signup";
 import Login from "./components/auth/Login"
 function App() {
