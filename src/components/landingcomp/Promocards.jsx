@@ -20,10 +20,10 @@ const PromoCards = () => {
       </div>
 
       {/* Promo Cards */}
-      <div className="flex flex-col md:flex-row gap-4 justify-center items-center w-full px-4">
+      <div className="flex flex-col md:flex-row gap-7 justify-center items-center w-full px-4">
         {/* First Promo Card - Smartphone */}
         <div
-          className="relative w-full md:w-[700px] h-[400px] rounded-lg shadow-lg overflow-hidden text-white flex items-center justify-center bg-cover bg-center transform transition-transform duration-300 hover:scale-105"
+          className="relative w-full md:w-[650px] h-[400px] rounded-lg shadow-lg overflow-hidden text-white flex items-center justify-center bg-cover bg-center transform transition-transform duration-300 hover:scale-105"
           style={{ backgroundImage: `url(${phoneImage})` }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center p-4">
@@ -43,7 +43,7 @@ const PromoCards = () => {
 
         {/* Second Promo Card - Headphones */}
         <div
-          className="relative w-full md:w-[700px] h-[400px] rounded-lg shadow-lg overflow-hidden text-white flex items-center justify-center bg-cover bg-center transform transition-transform duration-300 hover:scale-105"
+          className="relative w-full md:w-[650px] h-[400px] rounded-lg shadow-lg overflow-hidden text-white flex items-center justify-center bg-cover bg-center transform transition-transform duration-300 hover:scale-105"
           style={{ backgroundImage: `url(${headphoneImage})` }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center p-4">

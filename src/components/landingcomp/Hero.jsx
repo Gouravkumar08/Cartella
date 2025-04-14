@@ -34,7 +34,7 @@ export default function HeroSection() {
           onClick={() => {
             navigate('/signup')
           }}
-          className="mt-4 px-6 py-2 bg-blue-400 text-black font-semibold rounded-md shadow-lg hover:bg-blue-700 hover:text-white transition-all opacity-0 animate-fadeIn delay-400"
+          className="mt-4 px-6 py-2 bg-blue-500 text-black font-semibold rounded-md shadow-lg hover:bg-blue-700 hover:text-white transition-all opacity-0 animate-fadeIn delay-400"
         >
           Explore
         </button>

@@ -6,6 +6,7 @@ import About from "./landingcomp/About";
 import Shopbycateg from "./landingcomp/Shopbycateg";
 import Contact from "./landingcomp/Contact";
 import Footer from "./landingcomp/Footer";
+import Products from "./landingcomp/Products";
 
 export function Landing() {
   return (
@@ -13,6 +14,7 @@ export function Landing() {
       <Header />
       <Hero />
       <PromoCards />
+      <Products/>
       <About />
       <Shopbycateg />
       <Contact />
